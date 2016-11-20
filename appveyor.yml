@@ -9,5 +9,6 @@ cache:
 
 install:
   # - gradle wrapper
-  - gradlew build
-  - gradlew.bat check
+  # - gradlew build
+  # - gradlew.bat check
+  - echo y | "%ANDROID_HOME%\tools\android.bat" --silent update sdk --no-ui --all --filter android-19
