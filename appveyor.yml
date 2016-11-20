@@ -4,7 +4,10 @@ environment:
 
 cache:
   - 'C:\Users\%USERNAME%\.m2\repository'
+  - '.gradle'
+  - 'C:\Users\appveyor\.gradle'
 
 install:
-  - gradle wrapper
+  # - gradle wrapper
+  - gradlew build
   - gradlew.bat check
