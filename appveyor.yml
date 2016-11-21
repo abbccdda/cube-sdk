@@ -19,6 +19,9 @@ install:
   - ls %GRADLE_HOME%
   - gradle -v
   - gradle wrapper
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+test_script:
   - gradlew.bat check
 
 build: off
