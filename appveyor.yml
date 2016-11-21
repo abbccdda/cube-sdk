@@ -8,10 +8,9 @@ cache:
   - 'C:\Users\appveyor\.gradle'
 
 install:
-  # - gradle wrapper
   # - gradlew.bat check
   # - echo y | "%ANDROID_HOME%\tools\android.bat" --silent update sdk --no-ui --all --filter android-19
-  - mkdir C:\Users\appveyor\.gradle
+  # - mkdir C:\Users\appveyor\.gradle
   # - ps: Start-FileDownload 'https://services.gradle.org/distributions/gradle-2.2-all.zip'
   # - echo y | 7z x gradle-2.2-all.zip  -o"C:\Users\appveyor\.gradle\"
   - SET GRADLE_HOME=C:\Users\appveyor\.gradle\gradle-2.2\
