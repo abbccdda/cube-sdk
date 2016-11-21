@@ -9,7 +9,7 @@ cache:
 
 install:
   # - gradle wrapper
-  # - gradlew build
+  - "./gradlew check"
   # - gradlew.bat check
   # - echo y | "%ANDROID_HOME%\tools\android.bat" --silent update sdk --no-ui --all --filter android-19
   - ps: Start-FileDownload 'https://services.gradle.org/distributions/gradle-2.2-all.zip'
