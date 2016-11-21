@@ -8,7 +8,6 @@ cache:
   - 'C:\Users\appveyor\.gradle'
 
 install:
-  # - gradlew.bat check
   - echo y | "%ANDROID_HOME%\tools\android.bat" --silent update sdk --no-ui --all --filter android-19
   - echo y | "%ANDROID_HOME%\tools\android.bat" update sdk -u -a -t build-tools-20.0.0
   # - mkdir C:\Users\appveyor\.gradle
@@ -20,5 +19,6 @@ install:
   - ls %GRADLE_HOME%
   - gradle -v
   - gradle wrapper
+  - gradlew.bat check
 
 build: off
