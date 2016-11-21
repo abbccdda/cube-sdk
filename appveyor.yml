@@ -17,7 +17,7 @@ install:
   - SET GRADLE_HOME=C:\Users\appveyor\gradle-2.2\
   - echo %GRADLE_HOME%
   - SET PATH=%PATH%;%GRADLE_HOME%\bin
-  - echo %PATH%
+  - ls %GRADLE_HOME%\bin
   - "%GRADLE_HOME%/bin/gradle.bat -v"
 
 build: off
