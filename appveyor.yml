@@ -19,6 +19,6 @@ install:
   - SET GRADLE_HOME=gradle-downs\gradle-2.2\
   - echo %GRADLE_HOME%
   - SET PATH=%PATH%;%GRADLE_HOME%\bin
-  - gradle -v
+  - echo %PATH%
 
 build: off
