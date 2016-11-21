@@ -11,9 +11,12 @@ install:
   # - gradle wrapper
   # - gradlew build
   # - gradlew.bat check
-  - echo y | "%ANDROID_HOME%\tools\android.bat" --silent update sdk --no-ui --all --filter android-19
+  # - echo y | "%ANDROID_HOME%\tools\android.bat" --silent update sdk --no-ui --all --filter android-19
   - ps: Start-FileDownload 'https://services.gradle.org/distributions/gradle-2.2-all.zip'
   - mkdir gradle-downs
   - echo y | 7z e gradle-2.2-all.zip gradle-downs\
+  - ls gradle-downs
+  - SET GRADLE_HOME=gradle-downs\gradle-2.2\
+  - echo %GRADLE_HOME%
 
 build: off
