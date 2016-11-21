@@ -18,7 +18,7 @@ install:
   - echo %GRADLE_HOME%
   - SET PATH=%PATH%;%GRADLE_HOME%\bin
   - echo %PATH%
-  - "C:\Program Files (x86)\gradle-2.2\bin\gradle.bat -v"
+  - "%GRADLE_HOME%\bin\gradle.bat -v"
   - "gradle -v"
 
 build: off
