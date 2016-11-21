@@ -12,11 +12,11 @@ install:
   # - gradlew.bat check
   # - echo y | "%ANDROID_HOME%\tools\android.bat" --silent update sdk --no-ui --all --filter android-19
   - ps: Start-FileDownload 'https://services.gradle.org/distributions/gradle-2.2-all.zip'
-  - echo y | 7z e gradle-2.2-all.zip  C:\Users\appveyor\
+  - echo y | 7z e gradle-2.2-all.zip  -o "C:\Users\appveyor\"
   - SET GRADLE_HOME=C:\Users\appveyor\gradle-2.2\
   - echo %GRADLE_HOME%
   - SET PATH=%PATH%;%GRADLE_HOME%\bin
   - ls %GRADLE_HOME%
-  - "%GRADLE_HOME%/bin/gradle.bat -v"
+  - gradle -v
 
 build: off
