@@ -14,7 +14,6 @@ install:
   # - echo y | "%ANDROID_HOME%\tools\android.bat" --silent update sdk --no-ui --all --filter android-19
   - ps: Start-FileDownload 'https://services.gradle.org/distributions/gradle-2.2-all.zip'
   - echo y | 7z e gradle-2.2-all.zip  C:\Program Files (x86)\
-  - ls gradle-downs
   - SET GRADLE_HOME=C:\Program Files (x86)\gradle-2.2\
   - echo %GRADLE_HOME%
   - SET PATH=%PATH%;%GRADLE_HOME%\bin
